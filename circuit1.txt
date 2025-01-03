@@ -1,0 +1,6 @@
+# Simple Arithmetic Circuit
+INPUT a
+INPUT b
+ADD add1 a b
+MUL mul1 add1 b
+OUTPUT out1 mul1

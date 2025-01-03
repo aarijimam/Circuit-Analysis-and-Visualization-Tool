@@ -1,0 +1,7 @@
+INPUT in1
+INPUT in2
+ADD add1 in1 in2
+MUL mul1 in1 add1
+REG reg1 mul1
+ADD add2 reg1 in2
+OUTPUT out1 add2

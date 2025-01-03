@@ -1,0 +1,10 @@
+# Complex Circuit
+INPUT x1
+INPUT x2
+INPUT x3
+ADD add1 x1 x2
+MUL mul1 add1 x3
+REG reg1 mul1
+ADD add2 reg1 x1
+MUL mul2 add2 x2
+OUTPUT y mul2

@@ -1,0 +1,9 @@
+# Circuit with Register and Multiplexer
+INPUT in1
+INPUT in2
+INPUT select
+ADD add1 in1 in2
+MUX mux1 in1 add1 select
+REG reg1 mux1
+MUL mul1 reg1 in2
+OUTPUT out1 mul1

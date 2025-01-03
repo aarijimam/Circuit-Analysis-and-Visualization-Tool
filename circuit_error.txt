@@ -1,0 +1,9 @@
+# Example of an erroneous circuit file
+INPUT A
+INPUT B
+MUL M1 A B
+ADD M2 M1 C    # Error: Node C is not defined anywhere in the circuit
+OUTPUT OUT1 M2
+
+# Another error: Missing the type of node for D
+D A B
