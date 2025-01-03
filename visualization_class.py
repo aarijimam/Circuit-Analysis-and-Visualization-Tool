@@ -22,7 +22,7 @@ class CircuitVisualizer:
             for input_id in details["inputs"]:
                 graph.edge(circuit.nodes[input_id]["unique_id"], details["unique_id"])
 
-        graph.render(output_file, cleanup=True)
+        graph.render(f"./outputs/{output_file}", cleanup=True)
         print(f"Circuit visualization saved to {output_file}.png")
 
     @staticmethod
@@ -51,5 +51,5 @@ class CircuitVisualizer:
                 edge_color = "red" if (input_id, node_id) in critical_edges else "black"
                 graph.edge(circuit.nodes[input_id]["unique_id"], details["unique_id"], color=edge_color)
 
-        graph.render(output_file, cleanup=True)
+        graph.render(f"./outputs/{output_file}", cleanup=True)
         print(f"Circuit visualization with critical path saved to {output_file}.png")
